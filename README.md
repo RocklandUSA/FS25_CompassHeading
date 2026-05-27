@@ -13,7 +13,34 @@ Compass Heading Display adds a smooth, real-time horizontal compass bar to the t
 
 The compass scrolls fluidly as you turn, showing a full 16-point compass rose with degree tick marks, a gold centre indicator with numeric heading, and automatic markers for map waypoints and other players in multiplayer.
 
+<p align="center">
+  <img src="screenshots/compass-field-tractor.jpg" width="800" alt="Compass Heading bar visible across the top of the screen while mowing a field with a tractor — heading 302 (WNW)">
+</p>
+
 Compass Heading is also a **platform** — it publishes a comprehensive public API (`g_currentMission.compassHeading`) with 60+ functions that any third-party mod can use to display markers, query navigation data, control settings, and receive events. No dependency is required.
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/compass-rp-firefighter.jpg" width="400" alt="Compass over an RP scene — a firefighter character standing next to a ladder truck, heading 050 (NE)"><br>
+      <sub>On-foot RP scenes — works anywhere on the map.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/compass-vehicle-navigation.jpg" width="400" alt="Compass while driving a fire engine across a bridge on a rural road, heading 277 (W)"><br>
+      <sub>Vehicle navigation — keeps your bearing without opening the map.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/compass-pickup-marker.jpg" width="400" alt="First-person view at a wooden porch at night, with a third-party PICKUP marker at 6m visible on the compass"><br>
+      <sub>Third-party markers — any mod can add its own with a few lines of Lua.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/compass-tornado-tracking.jpg" width="400" alt="Stormy night scene with a tornado on the horizon; compass shows a flashing red TORNADO marker at 97m"><br>
+      <sub>Severe weather tracking — flashing red tornado marker with live distance.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
