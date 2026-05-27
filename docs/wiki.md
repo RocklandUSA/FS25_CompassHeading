@@ -1,7 +1,7 @@
 # Compass Heading Display — Official Wiki
 
 **Mod:** FS25_CompassHeading
-**Version:** 1.0.0.5
+**Version:** 1.0.0.0
 **Author:** RocklandUSA Gaming
 **Platform:** Farming Simulator 25 (PC)
 **Published at:** [rocklandgames.tv/mods/compass-heading-display](https://rocklandgames.tv/mods/compass-heading-display)
@@ -2326,18 +2326,13 @@ A: No hard limit. Practically, performance is limited by rendering, and even 100
 
 ## Section 10 — Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| **1.0.0.5** | 2026-03-19 | Fixed player/helper markers showing at wrong compass positions when inside a vehicle. Root cause: FS25 hides the player rootNode underground at (0,-200,0) when entering a vehicle, causing all bearings to calculate from map origin. Fix: added `getCurrentVehicle()` method fallback and prioritized camera position over player rootNode. Removed debug logging from v1.0.0.3/v1.0.0.4. |
-| 1.0.0.4 | 2026-03-18 | Position retrieval fix for vehicle mode (debug build). |
-| 1.0.0.3 | 2026-03-18 | Added debug logging to diagnose vehicle marker position bug. |
-| 1.0.0.2 | 2026-03-18 | Changed heading source to always use camera direction. |
-| **1.0.0.1** | 2026-03-12 | Fixed compass tracking camera direction instead of vehicle heading while driving. Fixed multiplayer compass showing wrong directions after player teleport (added 0.5s settling delay for >100m jumps). Silenced overlay warning on dedicated servers (no GPU available). |
-| **1.0.0.0** | 2026-03-10 | Initial release. Full 16-point compass rose, player/helper/waypoint/tornado markers, 60-function public API, provider registry, event system, animation engine, settings persistence. |
+| Version | Notes |
+|---------|-------|
+| **1.0.0.0** | Initial public release on GIANTS ModHub. Full 16-point compass rose with cardinal/intercardinal/minor labels, gold centre indicator, numeric heading readout, map waypoint tracking, multiplayer player markers with farm filtering, tornado tracking, AI helper tracking, public API with 60+ functions at `g_currentMission.compassHeading`, standalone marker lifecycle (addMarker / removeMarker / updateMarker with TTL), 13 marker styles, 14 default categories, animation engine (flash / pulse / fade-in / urgent mode), 9-event callback system, category filtering, distance-based auto-hide, runtime settings API, navigation utilities, provider registry, proximity queries, XML settings file. |
 
 ### Breaking API Changes
 
-None. The API has been stable since v1.0.0.0. All changes have been internal fixes to heading and position calculation. No function signatures, return types, or behaviors have changed.
+None — this is the initial public release. Subsequent releases will list any API changes here.
 
 ---
 

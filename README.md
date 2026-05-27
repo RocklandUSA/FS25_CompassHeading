@@ -1,8 +1,8 @@
 # FS25_CompassHeading — Compass Heading Display
 
-**Version:** 1.8.0.0
+**Version:** 1.0.0.0
 **Author:** RocklandUSA Gaming
-**Platform:** Farming Simulator 25 (Giants Engine descVersion 106)
+**Platform:** Farming Simulator 25 (Giants Engine descVersion 108)
 **Multiplayer:** Fully supported
 
 ---
@@ -448,32 +448,28 @@ These functions are available for any mod to use for general navigation, even if
 
 ## Changelog
 
-### 1.8.0.0
-- Full public API expansion: 60+ functions at `g_currentMission.compassHeading`
-- Standalone marker lifecycle: addMarker, removeMarker, updateMarker with TTL support
-- 13 marker styles: tick, diamond, triangle, circle, square, chevron, star, cross, dot, arrow_up, arrow_dn, dash, exclaim
-- 14 default categories with colours: emergency, delivery, equipment, farm, activity, shop, medical, police, fire, mechanic, custom, and more
-- Animation engine: flash, pulse, fade-in, and urgent mode per marker
-- Event/callback system: 9 event types including markerEnterView, markerExitView, compassToggle
-- Category filtering with enable/disable and custom colours
-- Distance-based auto-hide with maxDistance and minDistance per marker
-- Runtime settings API: change FOV, position, opacity, and colours without restarting
-- Navigation utilities: getBearing, getBearingTo, getDistanceTo, formatDistance, getCardinalDirection
-- Provider query API with getProvider, getProviders, setProviderEnabled, getMarkerCount
-- Proximity API: getNearestMarker, getMarkersInRange
-- Enhanced provider registry with category, style, scale, priority, and distance fields
-- Full backward compatibility with v1.7 registry API
+### 1.0.0.0 — Initial public release on GIANTS ModHub
 
-### 1.7.0.0
-- Initial public release
 - 16-point compass rose with scrolling cardinal, intercardinal, and minor labels
 - Gold centre indicator with numeric heading readout
 - Map waypoint tracking with distance display
-- Multiplayer player markers (cyan, with name and distance)
-- Third-party mod integration registry API
-- XML settings file for full customization
-- Dark background overlay with adjustable opacity
+- Multiplayer player markers (cyan, with name and distance) with optional farm filtering
+- Tornado tracking with flashing red marker
+- AI helper tracking with blocked-helper alerts
 - Edge-of-bar directional arrows for off-screen markers
+- XML settings file for full customization (position, width, FOV, opacity, colours, visibility)
+- Runtime settings API: change FOV, position, opacity, and colours without restarting
+- Public API with 60+ functions for third-party mod integration at `g_currentMission.compassHeading`
+- Standalone marker lifecycle: addMarker, removeMarker, updateMarker with TTL support
+- 13 marker styles: tick, diamond, triangle, circle, square, chevron, star, cross, dot, arrow_up, arrow_dn, dash, exclaim
+- 14 default categories with colours
+- Animation engine: flash, pulse, fade-in, and urgent mode per marker
+- Event/callback system with 9 event types
+- Category filtering with enable/disable and custom colours
+- Distance-based auto-hide with maxDistance and minDistance per marker
+- Navigation utilities: getBearing, getBearingTo, getDistanceTo, formatDistance, getCardinalDirection
+- Provider registry with category, style, scale, priority, and distance fields
+- Proximity API: getNearestMarker, getMarkersInRange
 
 ---
 
