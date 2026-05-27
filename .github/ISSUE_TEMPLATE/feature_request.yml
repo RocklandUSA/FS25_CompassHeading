@@ -1,0 +1,41 @@
+name: Feature Request
+description: Suggest a new capability or enhancement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing — please read the design principles in [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md). Features that compromise the non-intrusive HUD philosophy or break the public API are out of scope.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation BEFORE proposing a solution. What can't you do today that you want to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed feature
+      description: What would the feature look like, ideally? Player-facing? API-facing? Both?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What workarounds have you tried?
+      description: Have you tried using existing API surfaces (`addMarker`, `registerProvider`, etc.) to achieve the same result?
+    validations:
+      required: false
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      multiple: true
+      options:
+        - Players (visible HUD change)
+        - Mod developers (API addition)
+        - Server admins (configuration)
+    validations:
+      required: true

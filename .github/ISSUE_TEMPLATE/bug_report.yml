@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report something that isn't working the way the documentation says it should.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The fields below are the minimum information needed to act on the report — please fill them all in.
+  - type: input
+    id: mod_version
+    attributes:
+      label: Compass Heading Display version
+      description: Visible in the in-game mod menu, or in the title bar of the settings.xml.
+      placeholder: "1.0.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Farming Simulator 25 version
+      description: Bottom-left of the FS25 main menu.
+      placeholder: "1.18.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does the bug happen?
+      multiple: true
+      options:
+        - Single-player
+        - Multiplayer (listen server / host)
+        - Multiplayer (dedicated server, as client)
+        - Multiplayer (dedicated server, server-side)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: A short numbered list — what did you do, what did you expect, what happened instead?
+      placeholder: |
+        1. Load any map in single-player
+        2. Open the in-game console with F1
+        3. Type ...
+        4. Expected: ...
+        5. Observed: ...
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Relevant log.txt excerpt
+      description: |
+        Found at `Documents\My Games\FarmingSimulator2025\log.txt`. Paste lines containing `[CompassHeading]`, `Error:`, or `Warning:` from the session where the bug occurred. Wrap in triple-backtick fences.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other active mods
+      description: List any mods that interact with the compass or place markers on it (FSCore, EMS, ERFD, custom integrations, etc).
+    validations:
+      required: false
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched the existing issues and did not find a duplicate.
+          required: true
+        - label: I am running the latest version of the mod from GIANTS ModHub.
+          required: true

@@ -1,0 +1,45 @@
+name: Integration Help (Mod Authors)
+description: You're building a mod that uses the Compass Heading API and you've hit a snag.
+title: "[Integration] "
+labels: ["integration", "docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Before filing — the [Developer Guide](../blob/main/DEVGUIDE.md) and the [Quick Start section of the README](../blob/main/README.md#quick-start--zero-dependency-integration) cover the common cases. If your question is already answered there, great. If it isn't, that's a doc bug — file it here and we'll update the guide.
+  - type: input
+    id: your_mod
+    attributes:
+      label: Your mod's name
+      description: Optional — only if you want it on the public record.
+    validations:
+      required: false
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the integration goal — "add a marker for X", "react to Y event", "filter markers by Z", etc.
+    validations:
+      required: true
+  - type: textarea
+    id: code_attempt
+    attributes:
+      label: What code have you tried?
+      description: Paste the Lua snippet you've attempted. Wrap in triple-backtick fences with `lua` syntax.
+      render: lua
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happens vs what you expected
+      description: Error message? Silent no-op? Wrong rendering? Include log.txt lines if relevant.
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Compass Heading version you're testing against
+      placeholder: "1.0.0.0"
+    validations:
+      required: true
