@@ -2,8 +2,12 @@
 
 **Version:** 1.0.0.0
 **Author:** RocklandUSA Gaming
-**Platform:** Farming Simulator 25 (Giants Engine descVersion 108)
+**Platform:** Farming Simulator 25
 **Multiplayer:** Fully supported
+
+### [⬇ Download Compass Heading Display on the GIANTS ModHub](https://www.farming-simulator.com/mod.php?mod_id=355722)
+
+*Approved and live on the official GIANTS ModHub — install directly in-game or via the link above.*
 
 ---
 
@@ -72,7 +76,7 @@ Compass Heading is also a **platform** — it publishes a comprehensive public A
 
 Compass Heading Display is distributed exclusively through the official **GIANTS ModHub**.
 
-1. Open the in-game Mod Hub menu in Farming Simulator 25, search for **Compass Heading Display**, and subscribe — or download the mod zip from the [GIANTS ModHub website](https://www.farming-simulator.com/mods.php) and place it (do not extract) into your mods folder at `Documents\My Games\FarmingSimulator2025\mods\`.
+1. Open the in-game Mod Hub menu in Farming Simulator 25, search for **Compass Heading Display**, and subscribe — or download the mod zip directly from the [Compass Heading Display ModHub page](https://www.farming-simulator.com/mod.php?mod_id=355722) and place it (do not extract) into your mods folder at `Documents\My Games\FarmingSimulator2025\mods\`.
 2. Launch the game and enable the mod in the mod menu.
 3. The compass bar appears automatically when you load a map.
 
@@ -465,7 +469,7 @@ These functions are available for any mod to use for general navigation, even if
 | | |
 |---|---|
 | **Game** | Farming Simulator 25 |
-| **Engine** | Giants Engine descVersion 106 |
+| **Distribution** | [Official GIANTS ModHub](https://www.farming-simulator.com/mod.php?mod_id=355722) |
 | **Multiplayer** | Fully supported |
 | **Dedicated server** | Safe (no rendering occurs) |
 | **Dependencies** | None |
@@ -503,3 +507,4 @@ These functions are available for any mod to use for general navigation, even if
 ## Credits
 
 **Author:** RocklandUSA Gaming
+
