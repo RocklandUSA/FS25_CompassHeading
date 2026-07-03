@@ -8,7 +8,7 @@
 
 ## Overview
 
-Compass Heading Display provides a GTA RP-style horizontal compass bar for Farming Simulator 25. Beyond the visual compass, it exposes a **public API with 60+ functions** that any mod can use to display custom markers, query navigation data, and receive events — all with zero dependencies.
+Compass Heading Display provides a GTA simulation-style horizontal compass bar for Farming Simulator 25. Beyond the visual compass, it exposes a **public API with 60+ functions** that any mod can use to display custom markers, query navigation data, and receive events — all with zero dependencies.
 
 **API endpoint:** `g_currentMission.compassHeading`
 **Registry endpoint:** `g_currentMission.compassHeadingRegistry`

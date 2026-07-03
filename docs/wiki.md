@@ -36,7 +36,7 @@ Beyond the player-facing compass, Compass Heading Display is the **open compass 
 
 Farming Simulator 25 has no native compass or directional HUD. Players navigating large maps, coordinating in multiplayer, or managing AI helpers have to rely on the minimap or guess directions. Compass Heading Display solves this by providing an always-visible, non-intrusive heading reference that works on foot, in vehicles, and across all camera modes.
 
-The public API was designed so that other mod developers — building delivery systems, emergency mods, navigation tools, or roleplay frameworks — can place their own markers on the compass without writing any rendering code.
+The public API was designed so that other mod developers — building delivery systems, emergency mods, navigation tools, or rural-life-sim frameworks — can place their own markers on the compass without writing any rendering code.
 
 ### Who It's For
 

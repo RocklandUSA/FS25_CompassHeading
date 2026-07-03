@@ -26,8 +26,8 @@ Compass Heading is also a **platform** — it publishes a comprehensive public A
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="screenshots/compass-rp-firefighter.jpg" width="400" alt="Compass over an RP scene — a firefighter character standing next to a ladder truck, heading 050 (NE)"><br>
-      <sub>On-foot RP scenes — works anywhere on the map.</sub>
+      <img src="screenshots/compass-rp-firefighter.jpg" width="400" alt="Compass over a life-sim scene — a firefighter character standing next to a ladder truck, heading 050 (NE)"><br>
+      <sub>On-foot life-sim scenes — works anywhere on the map.</sub>
     </td>
     <td align="center" width="50%">
       <img src="screenshots/compass-vehicle-navigation.jpg" width="400" alt="Compass while driving a fire engine across a bridge on a rural road, heading 277 (W)"><br>
