@@ -1,6 +1,6 @@
 # FS25_CompassHeading — Compass Heading Display
 
-**Version:** 1.0.0.0
+**Version:** 1.1.0.0
 **Author:** RocklandUSA Gaming
 **Platform:** Farming Simulator 25
 **Multiplayer:** Fully supported
@@ -13,15 +13,17 @@
 
 ## Overview
 
-Compass Heading Display adds a smooth, real-time horizontal compass bar to the top of the screen. Inspired by the navigation HUDs found in GTA RP and military flight simulators, it gives you constant directional awareness without pausing or opening the map.
+Compass Heading Display adds a smooth, real-time horizontal compass bar to the top of the screen. It gives you constant directional awareness without pausing or opening the map.
 
 The compass scrolls fluidly as you turn, showing a full 16-point compass rose with degree tick marks, a gold centre indicator with numeric heading, and automatic markers for map waypoints and other players in multiplayer.
+
+**New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, and an **Emergency Services Pack** dispatch marker for the official GIANTS DLC.
 
 <p align="center">
   <img src="screenshots/compass-field-tractor.jpg" width="800" alt="Compass Heading bar visible across the top of the screen while mowing a field with a tractor — heading 302 (WNW)">
 </p>
 
-Compass Heading is also a **platform** — it publishes a comprehensive public API (`g_currentMission.compassHeading`) with 60+ functions that any third-party mod can use to display markers, query navigation data, control settings, and receive events. No dependency is required.
+Compass Heading also publishes a public API (`g_currentMission.compassHeading`) with 60+ functions that any other mod can use to display markers, query navigation data, control settings, and receive events. No dependency is required.
 
 <table align="center">
   <tr>
@@ -50,6 +52,16 @@ Compass Heading is also a **platform** — it publishes a comprehensive public A
 
 ## Features
 
+### New in 1.1
+
+- **In-game settings menu (default F6)** — configure the compass across four tabs (Display, Compass, Markers, Colours) with live preview and a **DEFAULTS** reset button; no file editing required
+- **Heading lock (default the `[` key)** — pin your current bearing on the compass with a live steer-correction cue and an on-line indicator, ideal for dead-straight passes
+- **Steering / Walk Lock (optional)** — while the heading lock is engaged, hold your line automatically: your vehicle drives straight and on foot you stay on the bearing until you toggle it off
+- **Emergency Services Pack dispatch marker** — if you own the official **GIANTS Emergency Services Pack DLC**, the compass shows a flashing emergency marker pointing to your active dispatch, on foot or in any vehicle
+- **Rebindable keybinds** — the settings key (F6) and heading-lock key (`[`) are both rebindable in **Options → Controls**
+
+### Compass & markers
+
 - **16-point compass rose** — N, NNE, NE, ENE, E, ESE, SE, SSE, S, SSW, SW, WSW, W, WNW, NW, NNW
 - **Degree tick marks** — every 10 degrees for fine orientation
 - **Gold centre indicator** — always visible at the top of the bar
@@ -69,6 +81,38 @@ Compass Heading is also a **platform** — it publishes a comprehensive public A
 - **Zero dependencies** — works standalone, no other mods required
 - **Multiplayer safe** — each client renders its own compass independently
 - **Dedicated server safe** — no rendering occurs; mod is harmless on servers
+
+---
+
+## Keybinds
+
+| Action | Default | Notes |
+|---|---|---|
+| Open settings menu | **F6** | Rebindable in Options → Controls |
+| Toggle heading lock | **[** | Rebindable in Options → Controls |
+
+Both keys can be reassigned in the game's own **Options → Controls** menu.
+
+---
+
+## In-Game Settings Menu
+
+Press **F6** to configure the compass without leaving the game, across four tabs:
+
+- **Display** — bar position, width, field of view, background opacity
+- **Compass** — cardinal / intercardinal / minor labels, tick marks, centre indicator, degree readout
+- **Markers** — player, waypoint, tornado, AI helper, and Emergency Services Pack dispatch markers, plus the **Steering / Walk Lock** toggle
+- **Colours** — per-marker colour presets
+
+Changes apply live and save to `settings.xml`. The **DEFAULTS** button restores every setting to its original value. Everything is still editable in `settings.xml` for advanced users.
+
+---
+
+## Heading Lock
+
+Press **[** to lock the compass to your current bearing. A locked marker and a live left/right steer-correction cue appear on the bar, turning green (**ON LINE**) when you're on the bearing — perfect for driving dead-straight passes or hand-working fields on foot.
+
+Enable **Steering / Walk Lock** (Markers tab, on by default) to make the lock *hold* your line: while locked, your vehicle's steering is held straight and on-foot movement is constrained to the bearing until you press **[** again. Turn the toggle off to use the lock as a visual guide only.
 
 ---
 
@@ -478,6 +522,15 @@ These functions are available for any mod to use for general navigation, even if
 ---
 
 ## Changelog
+
+### 1.1.0.0 — Feature update
+
+- **In-game settings menu (default F6)** — four tabs (Display, Compass, Markers, Colours) with live preview, a DEFAULTS reset, and full `settings.xml` persistence — no file editing required
+- **Heading lock (default the `[` key)** — pin your current bearing with a live steer-correction cue and an on-line indicator for dead-straight passes
+- **Steering / Walk Lock (optional, Markers tab)** — while the heading lock is engaged, holds your line automatically: vehicles drive straight and on-foot movement stays on the bearing until toggled off
+- **Emergency Services Pack dispatch marker** — reads the official GIANTS Emergency Services Pack DLC dispatch location and shows a flashing emergency marker pointing to your active call (marker appears only if you own that DLC)
+- **Rebindable keybinds** — F6 (settings) and `[` (heading lock) are assignable in Options → Controls
+- Both keys are detected reliably in-game; existing settings, markers, and the public API are unchanged and fully backward-compatible
 
 ### 1.0.0.0 — Initial public release on GIANTS ModHub
 
