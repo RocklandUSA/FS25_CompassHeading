@@ -20,30 +20,31 @@ The compass scrolls fluidly as you turn, showing a full 16-point compass rose wi
 **New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, and an **Emergency Pack** dispatch marker for the official GIANTS DLC.
 
 <p align="center">
-  <img src="screenshots/compass-field-tractor.jpg" width="800" alt="Compass Heading bar visible across the top of the screen while mowing a field with a tractor — heading 302 (WNW)">
+  <img src="screenshots/screenshot0.png" width="800" alt="In-game settings menu open on the DISPLAY tab, with sliders for bar position, width, field of view and background opacity, a Show When HUD Hidden toggle, and DEFAULTS / CLOSE footer buttons — compass bar visible across the top of the screen">
 </p>
+<p align="center"><sub>New in 1.1 — a full in-game settings menu (default F6), no file editing required.</sub></p>
 
 Compass Heading also publishes a public API (`g_currentMission.compassHeading`) with 60+ functions that any other mod can use to display markers, query navigation data, control settings, and receive events. No dependency is required.
 
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="screenshots/compass-rp-firefighter.jpg" width="400" alt="Compass over a life-sim scene — a firefighter character standing next to a ladder truck, heading 050 (NE)"><br>
-      <sub>On-foot life-sim scenes — works anywhere on the map.</sub>
+      <img src="screenshots/screenshot2.png" width="400" alt="Fire engine in a field with a flashing emergency dispatch marker on the compass"><br>
+      <sub>Emergency Pack DLC dispatch marker — points to your active call, on foot or in any vehicle.</sub>
     </td>
     <td align="center" width="50%">
-      <img src="screenshots/compass-vehicle-navigation.jpg" width="400" alt="Compass while driving a fire engine across a bridge on a rural road, heading 277 (W)"><br>
-      <sub>Vehicle navigation — keeps your bearing without opening the map.</sub>
+      <img src="screenshots/screenshot5.png" width="400" alt="Compass bar while driving a tractor and cultivator across a freshly tilled field"><br>
+      <sub>Vehicle field work — keeps your bearing without opening the map.</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="screenshots/compass-pickup-marker.jpg" width="400" alt="First-person view at a wooden porch at night, with a third-party PICKUP marker at 6m visible on the compass"><br>
-      <sub>Third-party markers — any mod can add its own with a few lines of Lua.</sub>
+      <img src="screenshots/screenshot6.png" width="400" alt="Player on foot using a hand tool with the heading lock engaged; a thin lime guidance line runs along the ground ahead"><br>
+      <sub>Heading lock on foot — a thin lime guidance line laid on the ground keeps you walking dead-straight with hand tools.</sub>
     </td>
     <td align="center" width="50%">
-      <img src="screenshots/compass-tornado-tracking.jpg" width="400" alt="Stormy night scene with a tornado on the horizon; compass shows a flashing red TORNADO marker at 97m"><br>
-      <sub>Severe weather tracking — flashing red tornado marker with live distance.</sub>
+      <img src="screenshots/screenshot7.png" width="400" alt="Player walking with the walk lock active; a bright lime bearing line runs perfectly straight across the ground into the distance"><br>
+      <sub>Walk lock in action — the occluded, terrain-following bearing line holds a perfectly straight row.</sub>
     </td>
   </tr>
 </table>

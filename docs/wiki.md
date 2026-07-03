@@ -50,15 +50,13 @@ The public API was designed so that other mod developers — building delivery s
 
 ### Screenshots
 
-<!-- Replace with actual screenshot URLs after capturing -->
-
 | Screenshot | Description |
 |------------|-------------|
-| ![Driving compass](screenshots/compass_driving.jpg) | Compass bar while driving a tractor showing heading 321° NNW with helper markers |
-| ![Waypoint tracking](screenshots/compass_waypoint.jpg) | Orange waypoint marker with distance indicator guiding the player |
-| ![Multiplayer markers](screenshots/compass_multiplayer.jpg) | Multiple player markers with farm-colored names on a multiplayer server |
-| ![Tornado warning](screenshots/compass_tornado.jpg) | Flashing red diamond tornado marker during severe weather |
-| ![Helper blocked](screenshots/compass_helper_blocked.jpg) | Flashing red exclamation mark indicating a stuck AI helper |
+| ![Settings menu](../screenshots/screenshot0.png) | In-game settings menu (default F6), DISPLAY tab — live sliders, Show When HUD Hidden toggle, and DEFAULTS / CLOSE footer buttons |
+| ![Emergency Pack dispatch](../screenshots/screenshot2.png) | Emergency Pack DLC dispatch marker — a flashing emergency marker on the compass points to the active call |
+| ![Vehicle field work](../screenshots/screenshot5.png) | Compass bar while driving a tractor and cultivator across a tilled field |
+| ![Heading lock on foot](../screenshots/screenshot6.png) | Heading lock on foot with a hand tool — a thin lime guidance line runs along the ground ahead |
+| ![Walk lock ground line](../screenshots/screenshot7.png) | Walk lock active — the occluded, terrain-following lime bearing line holds a perfectly straight row |
 
 ### Compatibility
 
