@@ -53,10 +53,14 @@ The public API was designed so that other mod developers — building delivery s
 | Screenshot | Description |
 |------------|-------------|
 | ![Settings menu](../screenshots/screenshot0.png) | In-game settings menu (default F6), DISPLAY tab — live sliders, Show When HUD Hidden toggle, and DEFAULTS / CLOSE footer buttons |
+| ![Fieldwork heading](../screenshots/screenshot2.jpg) | Compass bar while mowing a grass field with a tractor, heading 302 (WNW) |
 | ![Emergency Pack dispatch](../screenshots/screenshot2.png) | Emergency Pack DLC dispatch marker — a flashing emergency marker on the compass points to the active call |
+| ![Third-party marker](../screenshots/screenshot3.jpg) | Third-party PICKUP marker at 6m on the compass at a house porch at night, heading 080 (E) |
+| ![Tornado tracking](../screenshots/screenshot4.jpg) | Flashing red TORNADO marker at 97m during severe weather |
 | ![Vehicle field work](../screenshots/screenshot5.png) | Compass bar while driving a tractor and cultivator across a tilled field |
 | ![Heading lock on foot](../screenshots/screenshot6.png) | Heading lock on foot with a hand tool — a thin lime guidance line runs along the ground ahead |
 | ![Walk lock ground line](../screenshots/screenshot7.png) | Walk lock active — the occluded, terrain-following lime bearing line holds a perfectly straight row |
+| ![On foot anywhere](../screenshots/screenshot8.jpg) | On-foot scene beside a ladder truck at a fire station, heading 050 (NE) |
 
 ### Compatibility
 

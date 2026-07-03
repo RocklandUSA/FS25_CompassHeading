@@ -29,22 +29,42 @@ Compass Heading also publishes a public API (`g_currentMission.compassHeading`) 
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="screenshots/screenshot2.png" width="400" alt="Fire engine in a field with a flashing emergency dispatch marker on the compass"><br>
-      <sub>Emergency Pack DLC dispatch marker — points to your active call, on foot or in any vehicle.</sub>
+      <img src="screenshots/screenshot2.jpg" width="400" alt="Tractor with a rear mower cutting a grass field at sunset; compass bar shows heading 302 (WNW)"><br>
+      <sub>Constant heading awareness during fieldwork — no need to open the map.</sub>
     </td>
     <td align="center" width="50%">
-      <img src="screenshots/screenshot5.png" width="400" alt="Compass bar while driving a tractor and cultivator across a freshly tilled field"><br>
-      <sub>Vehicle field work — keeps your bearing without opening the map.</sub>
+      <img src="screenshots/screenshot2.png" width="400" alt="Fire engine in a field with a flashing emergency dispatch marker on the compass"><br>
+      <sub>Emergency Pack DLC dispatch marker — points to your active call, on foot or in any vehicle.</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
+      <img src="screenshots/screenshot3.jpg" width="400" alt="First-person view of a house porch at night with a third-party PICKUP marker at 6m on the compass, heading 080 (E)"><br>
+      <sub>Third-party markers — any mod can add its own with a few lines of Lua.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/screenshot4.jpg" width="400" alt="Stormy night scene with a tornado on the horizon; compass shows a flashing red TORNADO marker at 97m"><br>
+      <sub>Severe weather tracking — flashing red tornado marker with live distance.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/screenshot5.png" width="400" alt="Compass bar while driving a tractor and cultivator across a freshly tilled field"><br>
+      <sub>Vehicle field work — keeps your bearing without opening the map.</sub>
+    </td>
+    <td align="center" width="50%">
       <img src="screenshots/screenshot6.png" width="400" alt="Player on foot using a hand tool with the heading lock engaged; a thin lime guidance line runs along the ground ahead"><br>
       <sub>Heading lock on foot — a thin lime guidance line laid on the ground keeps you walking dead-straight with hand tools.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center" width="50%">
       <img src="screenshots/screenshot7.png" width="400" alt="Player walking with the walk lock active; a bright lime bearing line runs perfectly straight across the ground into the distance"><br>
       <sub>Walk lock in action — the occluded, terrain-following bearing line holds a perfectly straight row.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/screenshot8.jpg" width="400" alt="Player character on foot at a fire station beside a ladder truck; compass shows heading 050 (NE)"><br>
+      <sub>Works on foot anywhere on the map — in any life-sim or role-play scene.</sub>
     </td>
   </tr>
 </table>
