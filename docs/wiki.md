@@ -30,7 +30,7 @@
 
 Compass Heading Display adds a smooth, scrolling horizontal compass bar to the top of your screen in Farming Simulator 25. It provides constant situational awareness of your heading, nearby players, AI helpers, waypoints, and severe weather — all rendered directly on the game's HUD without any popup windows or menus.
 
-**New in 1.1:** an in-game settings menu (default **F6**), a heading lock (default the **[** key) with an optional Steering / Walk Lock that holds your line, and an Emergency Services Pack dispatch marker for the official GIANTS DLC.
+**New in 1.1:** an in-game settings menu (default **F6**), a heading lock (default the **[** key) with an optional Steering / Walk Lock that holds your line, and an Emergency Pack dispatch marker for the official GIANTS DLC.
 
 Beyond the player-facing compass, Compass Heading Display also offers an **open compass API for the FS25 modding community**. Any mod can display custom markers on the compass bar with a few lines of Lua and zero hard dependencies. The public API includes 60 functions for markers, categories, animations, events, distance filtering, and navigation utilities.
 
@@ -2330,7 +2330,7 @@ A: No hard limit. Practically, performance is limited by rendering, and even 100
 
 | Version | Notes |
 |---------|-------|
-| **1.1.0.0** | Feature update. In-game settings menu (default F6) with four tabs (Display, Compass, Markers, Colours), live preview, a DEFAULTS reset, and full `settings.xml` persistence. Heading lock (default the `[` key) with a live steer-correction cue and on-line indicator. Optional Steering / Walk Lock that holds your line automatically (vehicles drive straight; on-foot movement is constrained to the bearing) until toggled off. Emergency Services Pack dispatch marker reading the official GIANTS Emergency Services Pack DLC (appears only if you own that DLC). F6 and `[` are rebindable in Options → Controls. Existing settings, markers, and the public API are unchanged and fully backward-compatible. |
+| **1.1.0.0** | Feature update. In-game settings menu (default F6) with four tabs (Display, Compass, Markers, Colours), live preview, a DEFAULTS reset, and full `settings.xml` persistence. Heading lock (default the `[` key) with a live steer-correction cue and on-line indicator. Optional Steering / Walk Lock that holds your line automatically (vehicles drive straight; on-foot movement is constrained to the bearing) until toggled off. Emergency Pack dispatch marker reading the official GIANTS Emergency Pack DLC (appears only if you own that DLC). F6 and `[` are rebindable in Options → Controls. Existing settings, markers, and the public API are unchanged and fully backward-compatible. |
 | **1.0.0.0** | Initial public release on GIANTS ModHub. Full 16-point compass rose with cardinal/intercardinal/minor labels, gold centre indicator, numeric heading readout, map waypoint tracking, multiplayer player markers with farm filtering, tornado tracking, AI helper tracking, public API with 60+ functions at `g_currentMission.compassHeading`, standalone marker lifecycle (addMarker / removeMarker / updateMarker with TTL), 13 marker styles, 14 default categories, animation engine (flash / pulse / fade-in / urgent mode), 9-event callback system, category filtering, distance-based auto-hide, runtime settings API, navigation utilities, provider registry, proximity queries, XML settings file. |
 
 ### Breaking API Changes

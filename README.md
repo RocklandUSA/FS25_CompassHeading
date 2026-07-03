@@ -17,7 +17,7 @@ Compass Heading Display adds a smooth, real-time horizontal compass bar to the t
 
 The compass scrolls fluidly as you turn, showing a full 16-point compass rose with degree tick marks, a gold centre indicator with numeric heading, and automatic markers for map waypoints and other players in multiplayer.
 
-**New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, and an **Emergency Services Pack** dispatch marker for the official GIANTS DLC.
+**New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, and an **Emergency Pack** dispatch marker for the official GIANTS DLC.
 
 <p align="center">
   <img src="screenshots/compass-field-tractor.jpg" width="800" alt="Compass Heading bar visible across the top of the screen while mowing a field with a tractor — heading 302 (WNW)">
@@ -57,7 +57,7 @@ Compass Heading also publishes a public API (`g_currentMission.compassHeading`) 
 - **In-game settings menu (default F6)** — configure the compass across four tabs (Display, Compass, Markers, Colours) with live preview and a **DEFAULTS** reset button; no file editing required
 - **Heading lock (default the `[` key)** — pin your current bearing on the compass with a live steer-correction cue and an on-line indicator, ideal for dead-straight passes
 - **Steering / Walk Lock (optional)** — while the heading lock is engaged, hold your line automatically: your vehicle drives straight and on foot you stay on the bearing until you toggle it off
-- **Emergency Services Pack dispatch marker** — if you own the official **GIANTS Emergency Services Pack DLC**, the compass shows a flashing emergency marker pointing to your active dispatch, on foot or in any vehicle
+- **Emergency Pack dispatch marker** — if you own the official **GIANTS Emergency Pack DLC**, the compass shows a flashing emergency marker pointing to your active dispatch, on foot or in any vehicle
 - **Rebindable keybinds** — the settings key (F6) and heading-lock key (`[`) are both rebindable in **Options → Controls**
 
 ### Compass & markers
@@ -101,7 +101,7 @@ Press **F6** to configure the compass without leaving the game, across four tabs
 
 - **Display** — bar position, width, field of view, background opacity
 - **Compass** — cardinal / intercardinal / minor labels, tick marks, centre indicator, degree readout
-- **Markers** — player, waypoint, tornado, AI helper, and Emergency Services Pack dispatch markers, plus the **Steering / Walk Lock** toggle
+- **Markers** — player, waypoint, tornado, AI helper, and Emergency Pack dispatch markers, plus the **Steering / Walk Lock** toggle
 - **Colours** — per-marker colour presets
 
 Changes apply live and save to `settings.xml`. The **DEFAULTS** button restores every setting to its original value. Everything is still editable in `settings.xml` for advanced users.
@@ -528,7 +528,7 @@ These functions are available for any mod to use for general navigation, even if
 - **In-game settings menu (default F6)** — four tabs (Display, Compass, Markers, Colours) with live preview, a DEFAULTS reset, and full `settings.xml` persistence — no file editing required
 - **Heading lock (default the `[` key)** — pin your current bearing with a live steer-correction cue and an on-line indicator for dead-straight passes
 - **Steering / Walk Lock (optional, Markers tab)** — while the heading lock is engaged, holds your line automatically: vehicles drive straight and on-foot movement stays on the bearing until toggled off
-- **Emergency Services Pack dispatch marker** — reads the official GIANTS Emergency Services Pack DLC dispatch location and shows a flashing emergency marker pointing to your active call (marker appears only if you own that DLC)
+- **Emergency Pack dispatch marker** — reads the official GIANTS Emergency Pack DLC dispatch location and shows a flashing emergency marker pointing to your active call (marker appears only if you own that DLC)
 - **Rebindable keybinds** — F6 (settings) and `[` (heading lock) are assignable in Options → Controls
 - Both keys are detected reliably in-game; existing settings, markers, and the public API are unchanged and fully backward-compatible
 
