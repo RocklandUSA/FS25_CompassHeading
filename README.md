@@ -560,6 +560,8 @@ These functions are available for any mod to use for general navigation, even if
 - **Emergency Pack dispatch marker** — reads the official GIANTS Emergency Pack DLC dispatch location and shows a flashing emergency marker pointing to your active call (marker appears only if you own that DLC)
 - **Rebindable keybinds** — F6 (settings) and `[` (heading lock) are assignable in Options → Controls
 - Both keys are detected reliably in-game; existing settings, markers, and the public API are unchanged and fully backward-compatible
+- **Fixed** — marker labels now render up to the documented **12 characters** (the API had been truncating at 8) — thanks to **@whitevamp** for the report
+- **Fixed** — no more `bitmap used by DM modifier` / density-map errors in the log when loading a savegame that was saved at the midnight month transition; the compass now waits briefly after load before it begins polling coordinates, so the engine can finish rebuilding its density maps first — thanks to **@KroshkaRoo** for the detailed diagnosis
 
 ### 1.0.0.0 — Initial public release on GIANTS ModHub
 
