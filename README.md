@@ -67,6 +67,12 @@ Compass Heading also publishes a public API (`g_currentMission.compassHeading`) 
       <sub>Works on foot anywhere on the map — in any life-sim or role-play scene.</sub>
     </td>
   </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="screenshots/screenshot9.png" width="600" alt="Aerial view of a red pickup in a wheat field with wild boar near the field edge; the compass shows two flashing red BOAR markers with distance pointing to the herd, heading 333 (NNW)"><br>
+      <sub>Wild boar alerts (Vredo Pack DLC) — flashing BOAR markers point to a herd that has wandered onto land your farm owns, with live distance.</sub>
+    </td>
+  </tr>
 </table>
 
 ---
