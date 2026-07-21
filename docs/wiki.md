@@ -698,7 +698,7 @@ API.saveSettings()
 |-------|------|----------|---------|-------------|
 | `x` | number | Yes | — | World X coordinate |
 | `z` | number | Yes | — | World Z coordinate |
-| `label` | string | No | `nil` | Text label displayed above the marker (max 8 chars) |
+| `label` | string | No | `nil` | Text label displayed above the marker (max 12 chars) |
 | `color` | table | No | Category color | `{r, g, b, a}` color table (0.0–1.0 each) |
 | `style` | string | No | `"tick"` | Marker glyph style (see `getMarkerStyles()`) |
 | `scale` | number | No | `1.0` | Size multiplier for the marker glyph |
@@ -1688,7 +1688,7 @@ API.setMarkerColor("my_marker", {r=0, g=1, b=0, a=1})
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | `id` | string | Yes | The marker ID |
-| `text` | string | Yes | New label text (max 8 characters displayed) |
+| `text` | string | Yes | New label text (max 12 characters displayed) |
 
 **Returns:** `boolean` — `true` if updated, `false` if marker not found.
 

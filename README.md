@@ -280,7 +280,7 @@ Add, update, and remove markers that persist until explicitly removed or until t
 | `id` | string | Yes | Unique marker ID |
 | `opts.x` | number | Yes | World X coordinate |
 | `opts.z` | number | Yes | World Z coordinate |
-| `opts.label` | string | No | Short tag shown on bar (max 8 chars) |
+| `opts.label` | string | No | Short tag shown on bar (max 12 chars) |
 | `opts.color` | table | No | `{r, g, b, a}` — defaults to category colour |
 | `opts.style` | string | No | Marker glyph style (default: "tick") |
 | `opts.scale` | number | No | Size multiplier (default: 1.0) |
