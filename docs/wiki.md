@@ -30,7 +30,7 @@
 
 Compass Heading Display adds a smooth, scrolling horizontal compass bar to the top of your screen in Farming Simulator 25. It provides constant situational awareness of your heading, nearby players, AI helpers, waypoints, and severe weather — all rendered directly on the game's HUD without any popup windows or menus.
 
-**New in 1.1:** an in-game settings menu (default **F6**), a heading lock (default the **[** key) with an optional Steering / Walk Lock that holds your line, and an Emergency Pack dispatch marker for the official GIANTS DLC.
+**New in 1.1:** an in-game settings menu (default **F6**), a heading lock (default the **[** key) with an optional Steering / Walk Lock that holds your line, Wild Boar alerts for the GIANTS Vredo Pack DLC, and an Emergency Pack dispatch marker for the official GIANTS DLC.
 
 Beyond the player-facing compass, Compass Heading Display also offers an **open compass API for the FS25 modding community**. Any mod can display custom markers on the compass bar with a few lines of Lua and zero hard dependencies. The public API includes 60 functions for markers, categories, animations, events, distance filtering, and navigation utilities.
 
@@ -82,6 +82,12 @@ The public API was designed so that other mod developers — building delivery s
 | Feature | Description |
 |---------|-------------|
 | **16-Point Compass Rose** | Full N/NNE/NE/ENE/E/ESE/SE/SSE/S/SSW/SW/WSW/W/WNW/NW/NNW labels with smooth scrolling |
+| **In-Game Settings Menu (F6)** | Configure the compass in-game across four tabs — Display, Compass, Markers, Colours — with a DEFAULTS reset; all changes still persist to settings.xml (new in 1.1) |
+| **Heading Lock** | Pin your current bearing (default `[` key) with a live steer-correction cue and an on-line indicator for dead-straight passes (new in 1.1) |
+| **Steering / Walk Lock** | Optional hold that keeps your line automatically — vehicles drive straight and on foot you stay on the bearing, with a thin ground guidance line running ahead (new in 1.1) |
+| **Wild Boar Alerts** | Flashing marker points to a wild boar herd that wanders onto land your own farm owns, so you can clear it before it damages the field — your own fields only, if you own the GIANTS Vredo Pack DLC (new in 1.1) |
+| **Emergency Pack Dispatch Marker** | Flashing marker points to your active dispatch if you own the official GIANTS Emergency Pack DLC (new in 1.1) |
+| **Rebindable Keybinds** | The F6 settings key and `[` heading-lock key are reassignable in Options → Controls (new in 1.1) |
 | **Numeric Heading** | Live 000°–359° heading displayed below the compass bar |
 | **Tick Marks** | Subtle tick marks every 10° for precise heading reference |
 | **Gold Center Indicator** | Fixed gold tick at screen center showing your exact look direction |
@@ -339,7 +345,7 @@ end
 
 **Parameters:** None
 
-**Returns:** `string` — Version string in `"major.minor.patch.build"` format (e.g., `"1.0.0.5"`).
+**Returns:** `string` — Version string in `"major.minor.patch.build"` format (e.g., `"1.1.0.0"`).
 
 **Example:**
 ```lua
@@ -2332,7 +2338,7 @@ A: No hard limit. Practically, performance is limited by rendering, and even 100
 
 | Version | Notes |
 |---------|-------|
-| **1.1.0.0** | Feature update. In-game settings menu (default F6) with four tabs (Display, Compass, Markers, Colours), live preview, a DEFAULTS reset, and full `settings.xml` persistence. Heading lock (default the `[` key) with a live steer-correction cue and on-line indicator. Optional Steering / Walk Lock that holds your line automatically (vehicles drive straight; on-foot movement is constrained to the bearing) until toggled off. Emergency Pack dispatch marker reading the official GIANTS Emergency Pack DLC (appears only if you own that DLC). F6 and `[` are rebindable in Options → Controls. Existing settings, markers, and the public API are unchanged and fully backward-compatible. |
+| **1.1.0.0** | Feature update. In-game settings menu (default F6) with four tabs (Display, Compass, Markers, Colours), live preview, a DEFAULTS reset, and full `settings.xml` persistence. Heading lock (default the `[` key) with a live steer-correction cue and on-line indicator. Optional Steering / Walk Lock that holds your line automatically (vehicles drive straight; on-foot movement is constrained to the bearing, with a thin ground guidance line ahead) until toggled off. Wild Boar alerts — a flashing marker points to a wild boar herd that wanders onto land your own farm owns (your own fields only, if you own the GIANTS Vredo Pack DLC). Emergency Pack dispatch marker reading the official GIANTS Emergency Pack DLC (appears only if you own that DLC). F6 and `[` are rebindable in Options → Controls. Existing settings, markers, and the public API are unchanged and fully backward-compatible. |
 | **1.0.0.0** | Initial public release on GIANTS ModHub. Full 16-point compass rose with cardinal/intercardinal/minor labels, gold centre indicator, numeric heading readout, map waypoint tracking, multiplayer player markers with farm filtering, tornado tracking, AI helper tracking, public API with 60+ functions at `g_currentMission.compassHeading`, standalone marker lifecycle (addMarker / removeMarker / updateMarker with TTL), 13 marker styles, 14 default categories, animation engine (flash / pulse / fade-in / urgent mode), 9-event callback system, category filtering, distance-based auto-hide, runtime settings API, navigation utilities, provider registry, proximity queries, XML settings file. |
 
 ### Breaking API Changes
@@ -2350,10 +2356,6 @@ None — this is the initial public release. Subsequent releases will list any A
 | Channel | Link |
 |---------|------|
 | Website | [rocklandusa.com](https://rocklandusa.com) |
-| Discord | [discord.gg/bt7MNAPycJ](https://discord.gg/bt7MNAPycJ) |
-| YouTube | [youtube.com/@rocklandusa](https://youtube.com/@rocklandusa) |
-| Twitch | [twitch.tv/rocklandusa](https://twitch.tv/rocklandusa) |
-| Email | rocklandusa@gmail.com |
 
 ### Contributors
 
@@ -2383,4 +2385,4 @@ If you use the Compass Heading Display API in your mod, you may include this in 
 
 ---
 
-*This documentation is maintained by RocklandUSA Gaming. For corrections, additions, or API questions, join the [Discord](https://discord.gg/bt7MNAPycJ) or email rocklandusa@gmail.com.*
+*This documentation is maintained by RocklandUSA Gaming.*

@@ -17,7 +17,7 @@ Compass Heading Display adds a smooth, real-time horizontal compass bar to the t
 
 The compass scrolls fluidly as you turn, showing a full 16-point compass rose with degree tick marks, a gold centre indicator with numeric heading, and automatic markers for map waypoints and other players in multiplayer.
 
-**New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, and an **Emergency Pack** dispatch marker for the official GIANTS DLC.
+**New in 1.1:** a full in-game **settings menu** (default **F6**), a **heading lock** (default the **[** key) with an optional **Steering / Walk Lock** that holds your line automatically, **Wild Boar alerts** for herds that wander onto your fields, and an **Emergency Pack** dispatch marker for the official GIANTS DLC.
 
 <p align="center">
   <img src="screenshots/screenshot0.png" width="800" alt="In-game settings menu open on the DISPLAY tab, with sliders for bar position, width, field of view and background opacity, a Show When HUD Hidden toggle, and DEFAULTS / CLOSE footer buttons — compass bar visible across the top of the screen">
@@ -77,7 +77,8 @@ Compass Heading also publishes a public API (`g_currentMission.compassHeading`) 
 
 - **In-game settings menu (default F6)** — configure the compass across four tabs (Display, Compass, Markers, Colours) with live preview and a **DEFAULTS** reset button; no file editing required
 - **Heading lock (default the `[` key)** — pin your current bearing on the compass with a live steer-correction cue and an on-line indicator, ideal for dead-straight passes
-- **Steering / Walk Lock (optional)** — while the heading lock is engaged, hold your line automatically: your vehicle drives straight and on foot you stay on the bearing until you toggle it off
+- **Steering / Walk Lock (optional)** — while the heading lock is engaged, hold your line automatically: your vehicle drives straight and on foot you stay on the bearing until you toggle it off, with a thin ground guidance line running along the ground ahead showing the row you're holding
+- **Wild Boar alerts** — when a wild boar herd wanders onto land your own farm owns, a flashing marker points straight to it so you can clear it before it damages the field (your own fields only, if you own the GIANTS Vredo Pack DLC)
 - **Emergency Pack dispatch marker** — if you own the official **GIANTS Emergency Pack DLC**, the compass shows a flashing emergency marker pointing to your active dispatch, on foot or in any vehicle
 - **Rebindable keybinds** — the settings key (F6) and heading-lock key (`[`) are both rebindable in **Options → Controls**
 
@@ -256,7 +257,7 @@ If Compass Heading is not installed, all API calls are simply unavailable. No er
 | Function | Returns | Description |
 |---|---|---|
 | `isReady()` | boolean | True if the compass is loaded and operational |
-| `getVersion()` | string | Version string (e.g. "1.8.0.0") |
+| `getVersion()` | string | Version string (e.g. "1.1.0.0") |
 | `setEnabled(bool)` | — | Enable or disable the entire compass |
 | `isEnabled()` | boolean | Whether the compass is currently enabled |
 
@@ -417,9 +418,9 @@ if reg then
         id = "FS25_MyMod",
         label = "SHOP",
         color = {r=1, g=0.9, b=0.3, a=1},
-        category = "shop",         -- NEW in v1.8.0.0
-        style = "diamond",         -- NEW in v1.8.0.0
-        maxDistance = 1500,         -- NEW in v1.8.0.0
+        category = "shop",         -- NEW in v1.0
+        style = "diamond",         -- NEW in v1.0
+        maxDistance = 1500,         -- NEW in v1.0
         getPoints = function(self)
             return myShopLocations  -- cached array of {x=..., z=...}
         end,
@@ -549,6 +550,7 @@ These functions are available for any mod to use for general navigation, even if
 - **In-game settings menu (default F6)** — four tabs (Display, Compass, Markers, Colours) with live preview, a DEFAULTS reset, and full `settings.xml` persistence — no file editing required
 - **Heading lock (default the `[` key)** — pin your current bearing with a live steer-correction cue and an on-line indicator for dead-straight passes
 - **Steering / Walk Lock (optional, Markers tab)** — while the heading lock is engaged, holds your line automatically: vehicles drive straight and on-foot movement stays on the bearing until toggled off
+- **Wild Boar alerts** — a flashing marker points to a wild boar herd when it wanders onto land your own farm owns, so you can clear it before it damages the field (your own fields only, and only if you own the GIANTS Vredo Pack DLC)
 - **Emergency Pack dispatch marker** — reads the official GIANTS Emergency Pack DLC dispatch location and shows a flashing emergency marker pointing to your active call (marker appears only if you own that DLC)
 - **Rebindable keybinds** — F6 (settings) and `[` (heading lock) are assignable in Options → Controls
 - Both keys are detected reliably in-game; existing settings, markers, and the public API are unchanged and fully backward-compatible
