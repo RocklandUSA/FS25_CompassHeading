@@ -1,7 +1,7 @@
 # Compass Heading Display — Official Wiki
 
 **Mod:** FS25_CompassHeading
-**Version:** 1.1.0.0
+**Version:** 1.1.1.0
 **Author:** RocklandUSA Gaming
 **Platform:** Farming Simulator 25 (PC)
 **Published at:** [rocklandgames.tv/mods/compass-heading-display](https://rocklandgames.tv/mods/compass-heading-display)

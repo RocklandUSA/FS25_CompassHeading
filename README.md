@@ -1,6 +1,6 @@
 # FS25_CompassHeading — Compass Heading Display
 
-**Version:** 1.1.0.0
+**Version:** 1.1.1.0
 **Author:** RocklandUSA Gaming
 **Platform:** Farming Simulator 25
 **Multiplayer:** Fully supported
@@ -550,6 +550,13 @@ These functions are available for any mod to use for general navigation, even if
 ---
 
 ## Changelog
+
+### 1.1.1.0 — Shared settings hub
+
+- **RocklandUSA Gaming mods now share one settings key.** With two or more of our mods installed, **F6** opens a **MOD SETTINGS** list and you pick the one you want; with only Compass Heading installed, F6 opens the compass settings directly as before.
+- Compass Heading registers itself with the shared hub and stands aside on F6 when the hub owns the key, so a single press can never open two windows.
+- **The heading lock is unchanged** — `[` still works, and its Options → Controls binding is still registered whichever mod owns F6.
+- No settings, markers, or API behaviour changed. Existing `settings.xml` files are carried over untouched.
 
 ### 1.1.0.0 — Feature update
 
