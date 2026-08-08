@@ -1,14 +1,30 @@
-# FS25_CompassHeading — Compass Heading Display
-
-**Version:** 1.1.1.0
-
 <p align="center">
   <img src="icon_compassheading.png" width="180" alt="Compass Heading Display mod icon — a white compass rose with a dark needle inside a cyan ring, the RocklandUSA Gaming utility-category mark">
+</p>
+
+<h1 align="center">Compass Heading Display</h1>
+
+<p align="center"><strong>Version 1.1.1.0</strong></p>
+
+<p align="center">
+  <strong>A smooth, real-time compass bar for Farming Simulator 25 — heading, waypoints, markers and a heading lock, without ever opening the map.</strong><br>
+  Works on foot and in every vehicle. Fully multiplayer, no dependencies.
+</p>
+
+<p align="center">
+  <a href="https://rocklandusa.com/"><strong>rocklandusa.com</strong></a> ·
+  <a href="https://www.youtube.com/@rocklandusa">YouTube</a> ·
+  <a href="https://www.twitch.tv/rocklandusa">Twitch</a> ·
+  <a href="https://www.facebook.com/rocklandusa/">Facebook</a> ·
+  <a href="https://discord.gg/ahWDGanNP5">Discord</a> ·
+  <a href="https://github.com/RocklandUSA/FS25_CompassHeading/issues">Issues</a> ·
+  <a href="https://github.com/RocklandUSA/FS25_CompassHeading/discussions">Discussions</a>
 </p>
 
 ### [⬇ Download Compass Heading Display on the GIANTS ModHub](https://www.farming-simulator.com/mod.php?mod_id=355722)
 
 *Approved and live on the official GIANTS ModHub — install directly in-game or via the link above.*
+
 
 ---
 
