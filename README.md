@@ -1,9 +1,6 @@
 # FS25_CompassHeading — Compass Heading Display
 
 **Version:** 1.1.1.0
-**Author:** RocklandUSA Gaming
-**Platform:** Farming Simulator 25
-**Multiplayer:** Fully supported
 
 <p align="center">
   <img src="icon_compassheading.png" width="180" alt="Compass Heading Display mod icon — a white compass rose with a dark needle inside a cyan ring, the RocklandUSA Gaming utility-category mark">
@@ -14,6 +11,16 @@
 *Approved and live on the official GIANTS ModHub — install directly in-game or via the link above.*
 
 ---
+
+## Quick facts
+
+- **Author:** RocklandUSA Gaming
+- **Game:** Farming Simulator 25 (Giants Engine descVersion 111)
+- **Platform:** PC only — not available on console
+- **Multiplayer:** Fully supported (also runs in singleplayer)
+- **Dependency:** None — works entirely standalone
+- **Shared keybind:** F6 opens the RocklandUSA Gaming mod settings hub when more than one of our mods is installed
+- **Distribution:** Official GIANTS ModHub only — source is closed
 
 ## Overview
 
